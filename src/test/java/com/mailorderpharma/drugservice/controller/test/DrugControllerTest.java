@@ -104,7 +104,7 @@ class DrugControllerTest {
 		String actualValue = result.getResponse().getContentAsString();
 
 		String expectedValue = "{\"drugId\":\"PR1\",\"drugName\":\"Paracetamol\","
-				+ "\"expiryDate\":\"2024-11-21T18:30:00.000+00:00\",\"stocks\":500}";
+				+ "\"expiryDate\":\"2024-11-22T00:00:00.000+00:00\",\"stocks\":500}";
 
 
 		assertEquals(expectedValue, actualValue);
@@ -151,10 +151,10 @@ class DrugControllerTest {
 
 		String actualValue = result.getResponse().getContentAsString();
 
-		String expectedResult = "[{\"drugId\":\"PR1\",\"drugName\":\"Paracetamol\",\"manufacturer\":\"Priya\",\"manufactureDate\":\"2021-10-21T18:30:00.000+00:00\",\"expiryDate\":\"2024-11-21T18:30:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"1\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"2\",\"location\":\"Bangalore\",\"quantity\":500},{\"serialId\":\"3\",\"location\":\"Pune\",\"quantity\":500},{\"serialId\":\"4\",\"location\":\"Hyderabad\",\"quantity\":500}]},"
-				+ "{\"drugId\":\"CR2\",\"drugName\":\"Crocin\",\"manufacturer\":\"Aman\",\"manufactureDate\":\"2021-10-21T18:30:00.000+00:00\",\"expiryDate\":\"2024-11-21T18:30:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"5\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"6\",\"location\":\"Bangalore\",\"quantity\":500},{\"serialId\":\"7\",\"location\":\"Pune\",\"quantity\":500},{\"serialId\":\"8\",\"location\":\"Hyderabad\",\"quantity\":500}]},"
-				+ "{\"drugId\":\"PD3\",\"drugName\":\"Penadol\",\"manufacturer\":\"Madhuri\",\"manufactureDate\":\"2021-10-21T18:30:00.000+00:00\",\"expiryDate\":\"2024-11-21T18:30:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"9\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"10\",\"location\":\"Bangalore\",\"quantity\":500}]},"
-				+ "{\"drugId\":\"DD4\",\"drugName\":\"Dolo\",\"manufacturer\":\"Kedar\",\"manufactureDate\":\"2021-10-21T18:30:00.000+00:00\",\"expiryDate\":\"2024-11-21T18:30:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"11\",\"location\":\"Hyderabad\",\"quantity\":500},{\"serialId\":\"12\",\"location\":\"Bangalore\",\"quantity\":500}]}]";
+		String expectedResult = "[{\"drugId\":\"PR1\",\"drugName\":\"Paracetamol\",\"manufacturer\":\"Priya\",\"manufactureDate\":\"2021-10-22T00:00:00.000+00:00\",\"expiryDate\":\"2024-11-22T00:00:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"1\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"2\",\"location\":\"Bangalore\",\"quantity\":500},{\"serialId\":\"3\",\"location\":\"Pune\",\"quantity\":500},{\"serialId\":\"4\",\"location\":\"Hyderabad\",\"quantity\":500}]},"
+				+ "{\"drugId\":\"CR2\",\"drugName\":\"Crocin\",\"manufacturer\":\"Aman\",\"manufactureDate\":\"2021-10-22T00:00:00.000+00:00\",\"expiryDate\":\"2024-11-22T00:00:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"5\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"6\",\"location\":\"Bangalore\",\"quantity\":500},{\"serialId\":\"7\",\"location\":\"Pune\",\"quantity\":500},{\"serialId\":\"8\",\"location\":\"Hyderabad\",\"quantity\":500}]},"
+				+ "{\"drugId\":\"PD3\",\"drugName\":\"Penadol\",\"manufacturer\":\"Madhuri\",\"manufactureDate\":\"2021-10-22T00:00:00.000+00:00\",\"expiryDate\":\"2024-11-22T00:00:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"9\",\"location\":\"Chennai\",\"quantity\":500},{\"serialId\":\"10\",\"location\":\"Bangalore\",\"quantity\":500}]},"
+				+ "{\"drugId\":\"DD4\",\"drugName\":\"Dolo\",\"manufacturer\":\"Kedar\",\"manufactureDate\":\"2021-10-22T00:00:00.000+00:00\",\"expiryDate\":\"2024-11-22T00:00:00.000+00:00\",\"druglocationQuantities\":[{\"serialId\":\"11\",\"location\":\"Hyderabad\",\"quantity\":500},{\"serialId\":\"12\",\"location\":\"Bangalore\",\"quantity\":500}]}]";
 
 		assertEquals(expectedResult, actualValue);
 	}
